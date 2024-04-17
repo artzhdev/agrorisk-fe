@@ -1,0 +1,95 @@
+.explore-our-data-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 9.25rem;
+}
+
+.explore-our-data-section-grid {
+  display: grid;
+  grid-template-columns: 26.3125rem 20.8125rem;
+  column-gap: 3.75rem;
+}
+
+.explore-our-data-section-grid-details {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1.1875rem;
+}
+
+.explore-our-data-section-grid-details-title {
+  font-weight: 400;
+  font-size: 1.0625rem;
+  color: var(--primary-black-color);
+}
+
+.explore-our-data-section-grid-details-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1.5625rem;
+}
+
+.explore-our-data-section-grid-details-heading-title {
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: var(--primary-black-color);
+}
+
+.explore-our-data-section-grid-details-heading-subtitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.explore-our-data-section-grid-details-heading-subtitle-item {
+  font-weight: 400;
+  font-size: 1.0625rem;
+  color: var(--black-opacity-50-color);
+}
+
+.explore-our-data-section-grid-points {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 9.3125rem;
+  position: relative;
+}
+
+.explore-our-data-section-grid-points-item {
+  width: 100%;
+  max-width: 20.8125rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.4375rem;
+  border-radius: 0.625rem;
+  border: 0.0938rem solid var(--primary-white-color);
+  box-shadow: var(--primary-shadow);
+  padding: 2.4375rem 0;
+  background-color: var(--secondary-grey-color);
+}
+
+.explore-our-data-section-grid-points-item-title {
+  font-weight: 700;
+  font-size: 1.0625rem;
+  color: var(--primary-black-color);
+}
+
+.explore-our-data-section-grid-points-item-shift {
+  position: absolute;
+  top: 8.3125rem;
+  left: -1.25rem;
+  background-color: var(--secondary-turquoise-color);
+  border: none;
+  box-shadow: none;
+}
