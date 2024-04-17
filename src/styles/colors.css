@@ -1,0 +1,12 @@
+:root {
+  --primary-white-color: #ffffff;
+  --primary-turquoise-color: #005f86;
+  --primary-black-color: #000000;
+  --primary-gray-color: #ededed;
+
+  --border-gray-color: #d9d9d9;
+
+  --secondary-turquoise-color: #ccdfe7;
+
+  --black-opacity-50-color: rgba(0, 0, 0, 0.5);
+}

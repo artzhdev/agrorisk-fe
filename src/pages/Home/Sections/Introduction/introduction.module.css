@@ -1,0 +1,48 @@
+.introduction-section {
+  width: 100%;
+  height: 65.3125rem;
+  background-image: url("../../../../assets/imgs/backgrounds/intoduction-bg-1.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 2.9375rem 13.0625rem 14.25rem 6.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 18.875rem;
+}
+
+.introduction-section-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1.75rem;
+}
+
+.introduction-section-content-heading {
+  width: 100%;
+  max-width: 40.8125rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.introduction-section-content-heading-title {
+  font-weight: 700;
+  font-size: 3.75rem;
+  color: var(--primary-white-color);
+  line-height: 4.5056rem;
+}
+
+.introduction-section-content-heading-subtitle {
+  font-weight: 400;
+  font-size: 1.0625rem;
+  color: var(--primary-white-color);
+}
+
+.introduction-section-demonstration-link {
+  width: 15.6875rem;
+}

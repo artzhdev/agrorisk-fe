@@ -1,0 +1,16 @@
+.base-input {
+  text-align: center;
+  background-color: var(--secondary-turquoise-color);
+  font-weight: 400;
+  font-size: 1.0625rem;
+  color: var(--primary-turquoise-color);
+  padding: 1.1875rem;
+  border-radius: 2.0625rem;
+  width: 26.625rem;
+}
+
+.base-input::placeholder {
+  font-weight: 400;
+  font-size: 1.0625rem;
+  color: var(--primary-turquoise-color);
+}
