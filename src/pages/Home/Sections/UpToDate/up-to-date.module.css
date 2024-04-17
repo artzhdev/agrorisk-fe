@@ -1,0 +1,33 @@
+.up-to-date-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 4.5rem;
+  padding-bottom: 4.5rem;
+}
+
+.up-to-date-section-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2.8125rem;
+}
+
+.up-to-date-section-content-title {
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: var(--primary-black-color);
+}
+
+.up-to-date-section-content-subtitle {
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: var(--primary-black-color);
+}
+
+.up-to-date-section-subscribe-link {
+  width: 13.0625rem;
+}

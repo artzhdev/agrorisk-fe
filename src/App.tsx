@@ -1,7 +1,12 @@
-import "./App.css";
+import { Outlet } from "react-router-dom";
+import LandingLayout from "./layouts/Landing/landing.layout";
 
 function App() {
-  return <div>Main page</div>;
+  return (
+    <LandingLayout>
+      <Outlet />
+    </LandingLayout>
+  );
 }
 
 export default App;

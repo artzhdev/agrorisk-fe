@@ -1,0 +1,32 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+}
+
+.navbar-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.navbar-links-item {
+  color: var(--primary-white-color);
+  font-size: 1.0625rem;
+  font-weight: 400;
+}
+
+.navbar-actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navbar-actions-book-demo-link {
+  background-color: var(--secondary-turquoise-color) !important;
+  color: var(--primary-turquoise-color) !important;
+}
