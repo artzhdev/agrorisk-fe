@@ -8,7 +8,9 @@ import ButtonLink from "../Buttons/ButtonLink/ButtonLink";
 const Navbar = () => {
   return (
     <div className={styles["navbar"]}>
-      <img src={AgroRiskLogoOne} alt="logo" />
+      <Link to="/">
+        <img src={AgroRiskLogoOne} alt="logo" />
+      </Link>
       <div className={styles["navbar-links"]}>
         {NAVBAR_LINKS.map((link) => {
           return (
@@ -23,7 +25,11 @@ const Navbar = () => {
         })}
       </div>
       <div className={styles["navbar-actions"]}>
-        <ButtonLink to="#" title="Book Demo" className={styles["navbar-actions-book-demo-link"]} />
+        <ButtonLink
+          to="#"
+          title="Book Demo"
+          className={styles["navbar-actions-book-demo-link"]}
+        />
         <ButtonLink to="#" title="Log In" />
       </div>
     </div>
