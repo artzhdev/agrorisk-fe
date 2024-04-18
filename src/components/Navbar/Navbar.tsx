@@ -2,20 +2,37 @@ import { NAVBAR_LINKS } from "@/constants/links";
 import styles from "./navbar.module.css";
 
 import AgroRiskLogoOne from "@/assets/imgs/logos/agrorisk-logo-1.svg";
-import { Link } from "react-router-dom";
+import AgroRiskLogoTwo from "@/assets/imgs/logos/agrorisk-logo-2.svg";
+import { Link, useLocation } from "react-router-dom";
 import ButtonLink from "../Buttons/ButtonLink/ButtonLink";
+import { useEffect, useState } from "react";
+import cn from "classnames";
 
 const Navbar = () => {
+  const [isTalkToUsPage, setIsTalkToUsPage] = useState(false);
+
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    setIsTalkToUsPage(["/talk-to-us"].includes(pathname));
+  }, [pathname]);
+
   return (
     <div className={styles["navbar"]}>
       <Link to="/">
-        <img src={AgroRiskLogoOne} alt="logo" />
+        <img
+          src={isTalkToUsPage ? AgroRiskLogoTwo : AgroRiskLogoOne}
+          alt="logo"
+        />
       </Link>
       <div className={styles["navbar-links"]}>
         {NAVBAR_LINKS.map((link) => {
           return (
             <Link
-              className={styles["navbar-links-item"]}
+              className={cn({
+                [styles["navbar-links-item"]]: true,
+                [styles["navbar-links-item-contrast"]]: isTalkToUsPage,
+              })}
               key={link.id}
               to={link.to}
             >
@@ -26,7 +43,7 @@ const Navbar = () => {
       </div>
       <div className={styles["navbar-actions"]}>
         <ButtonLink
-          to="#"
+          to="/talk-to-us"
           title="Book Demo"
           className={styles["navbar-actions-book-demo-link"]}
         />

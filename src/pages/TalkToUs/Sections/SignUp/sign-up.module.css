@@ -1,0 +1,49 @@
+.sign-up-section {
+  width: 100%;
+  background-color: var(--secondary-grey-color);
+  border-radius: 0.625rem;
+  margin: 3.5rem 0 9.0625rem;
+  padding: 2.8125rem 9.0625rem 9.0625rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 3.5625rem;
+}
+
+.sign-up-section-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.125rem;
+}
+
+.sign-up-section-heading-tip {
+  width: 100%;
+  max-width: 26.3125rem;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.0625rem;
+  color: var(--black-opacity-50-color);
+}
+
+.sign-up-section-heading-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sign-up-section-heading-content-preview {
+  font-weight: 400;
+  font-size: 1.0625rem;
+  color: var(--primary-black-color);
+}
+
+.sign-up-section-heading-content-title {
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: var(--primary-black-color);
+}
