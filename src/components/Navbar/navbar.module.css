@@ -19,6 +19,10 @@
   font-weight: 400;
 }
 
+.navbar-links-item-contrast {
+  color: var(--primary-black-color);
+}
+
 .navbar-actions {
   display: flex;
   justify-content: flex-end;

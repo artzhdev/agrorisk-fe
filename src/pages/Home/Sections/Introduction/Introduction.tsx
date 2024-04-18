@@ -20,7 +20,7 @@ const IntroductionSection = () => {
           </span>
         </div>
         <ButtonLink
-          to="#"
+          to="/talk-to-us"
           title="Ask for demonstration"
           className={styles["introduction-section-demonstration-link"]}
         />

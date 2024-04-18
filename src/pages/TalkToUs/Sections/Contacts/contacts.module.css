@@ -1,0 +1,41 @@
+.contacts-section {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 26.3125rem);
+  column-gap: 3.125rem;
+  padding-bottom: 8.375rem;
+  justify-content: center;
+}
+
+.contacts-section-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.contacts-section-item-title {
+  font-weight: 400;
+  font-size: 1.0625rem;
+  color: var(--primary-black-color);
+}
+
+.contacts-section-item-subtitle {
+  font-weight: 400;
+  font-size: 1.0625rem;
+  color: var(--black-opacity-50-color);
+}
+
+.contacts-section-item-subtitle-email-link {
+  font-weight: 400;
+  font-size: 1.0625rem;
+  color: var(--black-opacity-50-color);
+  text-decoration: underline;
+}
+
+.contacts-section-item-subtitle-linkedin-link {
+  font-weight: 700;
+  font-size: 1.0625rem;
+  color: var(--black-opacity-50-color);
+}

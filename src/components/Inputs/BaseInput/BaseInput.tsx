@@ -17,6 +17,7 @@ const BaseInput: FC<BaseInputProps> = ({
     <input
       type={type}
       value={value}
+      autoComplete="off"
       onChange={onChange}
       name={name}
       placeholder={placeholder}

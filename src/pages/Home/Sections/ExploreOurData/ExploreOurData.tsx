@@ -1,9 +1,19 @@
-import { EXPLORE_OUR_DATA } from "@/constants/exploreOurData";
+import {
+  EXPLORE_OUR_DATA_BUTTONS,
+  EXPLORE_OUR_DATA_CONTENT,
+} from "@/constants/exploreOurData";
 import styles from "./explore-our-data.module.css";
 
 import cn from "classnames";
+import { useMemo, useState } from "react";
 
 const ExploreOurDataSection = () => {
+  const [dataName, setDataName] = useState("company_risk_insights");
+
+  const dataContent = useMemo(() => {
+    return EXPLORE_OUR_DATA_CONTENT.find((item) => item.name === dataName);
+  }, [dataName]);
+
   return (
     <div className={styles["explore-our-data-section"]}>
       <div className={styles["explore-our-data-section-grid"]}>
@@ -21,47 +31,40 @@ const ExploreOurDataSection = () => {
                 styles["explore-our-data-section-grid-details-heading-title"]
               }
             >
-              Want to know more about AgroRisk?
+              {dataContent?.title}
             </span>
             <div
               className={
                 styles["explore-our-data-section-grid-details-heading-subtitle"]
               }
             >
-              <span
-                className={
-                  styles[
-                    "explore-our-data-section-grid-details-heading-subtitle-item"
-                  ]
-                }
-              >
-                AgroRisk is a leading software tool designed to specifically for
-                financial companies to evaluate and quantify climate-related
-                risks faced by agricultural farms.
-              </span>
-              <span
-                className={
-                  styles[
-                    "explore-our-data-section-grid-details-heading-subtitle-item"
-                  ]
-                }
-              >
-                AgroRisk offers advanced analytics and data-driven insights to
-                help financial institutions and farmers to make informed
-                decisions and transition strategies.
-              </span>
+              {dataContent?.subtitle.map((item) => {
+                return (
+                  <span
+                    key={item.id}
+                    className={
+                      styles[
+                        "explore-our-data-section-grid-details-heading-subtitle-item"
+                      ]
+                    }
+                  >
+                    {item.title}
+                  </span>
+                );
+              })}
             </div>
           </div>
         </div>
         <div className={styles["explore-our-data-section-grid-points"]}>
-          {EXPLORE_OUR_DATA.map((data, dataIndex) => {
+          {EXPLORE_OUR_DATA_BUTTONS.map((data) => {
             return (
-              <div
+              <button
                 key={data.id}
+                onClick={() => setDataName(data.name)}
                 className={cn({
                   [styles["explore-our-data-section-grid-points-item"]]: true,
-                  [styles["explore-our-data-section-grid-points-item-shift"]]:
-                    dataIndex === 1,
+                  [styles["explore-our-data-section-grid-points-item-active"]]:
+                    dataName === data.name,
                 })}
               >
                 <img src={data.icon} />
@@ -72,7 +75,7 @@ const ExploreOurDataSection = () => {
                 >
                   {data.title}
                 </span>
-              </div>
+              </button>
             );
           })}
         </div>
