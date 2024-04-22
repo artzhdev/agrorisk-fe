@@ -1,13 +1,12 @@
-import ButtonLink from "@/components/Buttons/ButtonLink/ButtonLink";
 import styles from "./depth-and-transparency.module.css";
 
-import mapImgTwo from "@/assets/imgs/map-2.svg";
+import groundImg from "@/assets/imgs/ground.png";
 
 const DepthAndTransparencySection = () => {
   return (
     <div className={styles["depth-and-transparency-section"]}>
       <div className={styles["depth-and-transparency-section-grid"]}>
-        <img src={mapImgTwo} alt="map two" />
+        <img src={groundImg} alt="ground" className={styles["depth-and-transparency-section-grid-img"]} />
         <div className={styles["depth-and-transparency-section-grid-content"]}>
           <div
             className={
@@ -21,7 +20,7 @@ const DepthAndTransparencySection = () => {
                 ]
               }
             >
-              APPROACH
+              COMPLIANCE
             </span>
             <div
               className={
@@ -37,7 +36,7 @@ const DepthAndTransparencySection = () => {
                   ]
                 }
               >
-                Depth and <br /> transparency.
+                Stay on top of regulatory reporting
               </span>
               <div
                 className={
@@ -53,9 +52,9 @@ const DepthAndTransparencySection = () => {
                     ]
                   }
                 >
-                  We take a structured approach to measuring sustainability and
-                  we ensure all our data is traceable back to the originating
-                  source for full transparency.
+                  With detailed ESG reporting requirements being rolled out
+                  across the sector, it is more important than ever to have the
+                  right data and risk insights to ensure compliant reporting.
                 </span>
                 <span
                   className={
@@ -64,23 +63,12 @@ const DepthAndTransparencySection = () => {
                     ]
                   }
                 >
-                  Our datasets offer more granularity than conventional ESG
-                  data, allowing you to run complex ESG analyses with
-                  unparalleled depth, across multiple portfolios and benchmarks,
-                  focusing on the sustainability metric of your choice.
+                  With AgroRisk you have sufficient data to be compliant with
+                  both the Corporate Sustainability Re
                 </span>
               </div>
             </div>
           </div>
-          <ButtonLink
-            to="#"
-            title="Read more"
-            className={
-              styles[
-                "depth-and-transparency-section-grid-content-read-mode-link"
-              ]
-            }
-          />
         </div>
       </div>
     </div>

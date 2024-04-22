@@ -5,7 +5,10 @@ import mapImgOne from "@/assets/imgs/map-1.svg";
 
 const MapBasedAnalyticsSection = () => {
   return (
-    <div className={styles["map-based-analytics-section"]}>
+    <div
+      className={styles["map-based-analytics-section"]}
+      id="mapBasedAnalytics"
+    >
       <div className={styles["map-based-analytics-section-grid"]}>
         <div className={styles["map-based-analytics-section-grid-map"]}>
           <img src={mapImgOne} alt="map-one" />
@@ -21,7 +24,7 @@ const MapBasedAnalyticsSection = () => {
                 styles["map-based-analytics-section-grid-details-heading-title"]
               }
             >
-              Map based <br /> analytics.
+              Actionable Risk Insights
             </span>
             <div
               className={
@@ -37,9 +40,9 @@ const MapBasedAnalyticsSection = () => {
                   ]
                 }
               >
-                Our Analytics Platform is an end-to-end solution to explore and
-                analyse the sustainability profile of individual issuers, funds
-                or entire portfolios.
+                ”AgroRisk offers advanced analytics and data-driven insights to
+                help financial institutions and farmers make informed decisions
+                and transition strategies.
               </span>
               <span
                 className={
@@ -48,10 +51,14 @@ const MapBasedAnalyticsSection = () => {
                   ]
                 }
               >
-                From high-level portfolio analysis to granular insights on
-                single entities, we enable more efficient understanding of
-                investments and benchmarking, as well as powerful report
-                generation and data exports.
+                By leveraging AgroRisk's innovative technology, financial
+                companies and farmers can better understand the impact of
+                climate risks on agricultural operations and mitigate potential
+                financial losses. This powerful tool enables banks and insurance
+                providers to enhance their risk management strategies and tailor
+                their financial products to the unique needs of agricultural
+                businesses. AgroRisk plays a vital role in fostering
+                sustainability and resilience within the agricultural sector.”
               </span>
             </div>
           </div>

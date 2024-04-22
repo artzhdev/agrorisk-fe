@@ -1,10 +1,9 @@
-import ButtonLink from "@/components/Buttons/ButtonLink/ButtonLink";
 import styles from "./insights.module.css";
 import { INSIGHTS } from "@/constants/insights";
 
 const InsightsSection = () => {
   return (
-    <div className={styles["insights-section"]}>
+    <div className={styles["insights-section"]} id="insights">
       <div className={styles["insights-section-content"]}>
         <div className={styles["insights-section-content-heading"]}>
           <span className={styles["insights-section-content-heading-preview"]}>
@@ -14,8 +13,7 @@ const InsightsSection = () => {
             Latest insights
           </span>
           <span className={styles["insights-section-content-heading-subtitle"]}>
-            Read all the latest news, thought leadership and research from
-            Matter
+            Read the latest analyses and think pieces from AgroRisk
           </span>
         </div>
         <div className={styles["insights-section-content-grid"]}>
@@ -72,11 +70,6 @@ const InsightsSection = () => {
           })}
         </div>
       </div>
-      <ButtonLink
-        to="#"
-        title="See insights"
-        className={styles["insights-section-see-insights-link"]}
-      />
     </div>
   );
 };

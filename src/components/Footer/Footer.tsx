@@ -17,7 +17,12 @@ const Footer = () => {
               </span>
               {link.items.map((item) => {
                 return (
-                  <Link key={item.id} to={item.to} className={styles["footer-grid-item-link"]}>
+                  <Link
+                    key={item.id}
+                    target={item.title === "LinkedIn" ? "_blank" : "_self"}
+                    to={item.to}
+                    className={styles["footer-grid-item-link"]}
+                  >
                     {item.title}
                   </Link>
                 );

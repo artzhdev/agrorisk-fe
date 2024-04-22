@@ -1,30 +1,33 @@
 import styles from "./philosophy.module.css";
 
 import iStockImg from "@/assets/imgs/istock.svg";
-import basfLogoOne from "@/assets/imgs/logos/basf-logo-1.svg";
 
 const PhilosophySection = () => {
   return (
-    <div className={styles["philosophy-section"]}>
+    <div
+      className={styles["philosophy-section"]}
+      id="intuitiveSoftwareSolution"
+    >
       <div className={styles["philosophy-section-grid"]}>
         <div className={styles["philosophy-section-grid-details"]}>
-          <img src={basfLogoOne} alt="basf" />
+          <span className={styles["philosophy-section-grid-details-title"]}>
+            Intuitive Software Solution
+          </span>
           <div className={styles["philosophy-section-grid-details-content"]}>
             <span
               className={styles["philosophy-section-grid-details-content-item"]}
             >
-              “Understanding the extent to which companies' core business
-              revenues are aligned to the Sustainable Development Goals, and by
-              extension have the potential to contribute to real-world
-              sustainable outcomes, is the next frontier of sustainability
-              analysis.
+              AgroRisk is a leading software tool designed specifically for
+              financial companies to evaluate and quantify climate-related risks
+              faced by agricultural farms.
             </span>
             <span
               className={styles["philosophy-section-grid-details-content-item"]}
             >
-              Matter helps to break down this barrier and provides investors
-              with actionable information on what constitutes company alignment
-              to the targets underpinning the 17 SDGs”
+              With the increasing impacts of climate change and extreme weather
+              events, it is crucial for banks and insurance companies to
+              accurately assess credit risks, determine appropriate insurance
+              premiums, and to improve customer
             </span>
           </div>
         </div>
