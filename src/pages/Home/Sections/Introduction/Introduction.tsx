@@ -11,7 +11,8 @@ const IntroductionSection = () => {
           <span
             className={styles["introduction-section-content-heading-title"]}
           >
-            Financial Climate Risks for Agriculture
+            Financial Climate <br /> Risks <br />
+            for Agriculture
           </span>
           <span
             className={styles["introduction-section-content-heading-subtitle"]}

@@ -6,7 +6,11 @@ const DepthAndTransparencySection = () => {
   return (
     <div className={styles["depth-and-transparency-section"]}>
       <div className={styles["depth-and-transparency-section-grid"]}>
-        <img src={groundImg} alt="ground" className={styles["depth-and-transparency-section-grid-img"]} />
+        <img
+          src={groundImg}
+          alt="ground"
+          className={styles["depth-and-transparency-section-grid-img"]}
+        />
         <div className={styles["depth-and-transparency-section-grid-content"]}>
           <div
             className={
@@ -64,7 +68,8 @@ const DepthAndTransparencySection = () => {
                   }
                 >
                   With AgroRisk you have sufficient data to be compliant with
-                  both the Corporate Sustainability Re
+                  both the Corporate Sustainability Reporting Directive (CSRD)
+                  and CRR/CRD.
                 </span>
               </div>
             </div>
