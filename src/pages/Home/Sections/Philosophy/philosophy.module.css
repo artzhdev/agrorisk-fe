@@ -1,15 +1,12 @@
 .philosophy-section {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 7.1875rem 6.5rem 7.1875rem 7rem;
+  padding: 7.1875rem 13.0625rem 7.1875rem;
   background-color: var(--primary-white-color);
 }
 
 .philosophy-section-grid {
   display: grid;
-  grid-template-columns: 37.5rem 39.5rem;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .philosophy-section-grid-details {
@@ -31,7 +28,7 @@
 
 .philosophy-section-grid-details-content {
   width: 100%;
-  max-width: 23.875rem;
+  max-width: 25.875rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -50,4 +47,5 @@
   background-color: var(--secondary-turquoise-color);
   border-radius: 0 0.625rem 0.625rem 0;
   height: 100%;
+  width: 100%;
 }

@@ -11,7 +11,8 @@ const ContactsSection = () => {
         <span className={styles["contacts-section-item-subtitle"]}>
           You can always send us an email to get in touch with us directly at{" "}
           <Link
-            to="#"
+            to="mailto:hello@agrorisk.io"
+            target="_blank"
             className={styles["contacts-section-item-subtitle-email-link"]}
           >
             hello@agrorisk.io

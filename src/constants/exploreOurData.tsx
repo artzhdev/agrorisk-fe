@@ -57,16 +57,23 @@ export const EXPLORE_OUR_DATA_CONTENT = [
       {
         id: uuidv4() + Date.now(),
         title: `
-          Assessing  financial  risks  at the company level is key to 
-          determine  credit  risks, insurance  premiums,  and 
-          for  improving  customer dialogues.
+          Assessing financial risks at the company 
+          level  is  key  to  determine  credit  risks, 
+          insurance premiums, and for improving 
+          customer dialogues.
         `,
       },
       {
         id: uuidv4() + Date.now(),
         title: `
-          We  provide  aggregate  risk analytics, comparisons, and 
-          financial  insights  for  all farms. 
+          We  provide  aggregate  risk  analytics, 
+          comparisons,  and  financial  insights  for 
+          all  farms.  This  enables  financial 
+          companies  to  accuarately  assess 
+          financial  risks  for  each  farm  in  their 
+          portfolio,  and  to  compare  risk  levels 
+          across  farms  and  gain  deeper  insights 
+          into their exposures.
         `,
       },
     ],

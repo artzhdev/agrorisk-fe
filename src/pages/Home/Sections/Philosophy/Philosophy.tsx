@@ -27,7 +27,7 @@ const PhilosophySection = () => {
               With the increasing impacts of climate change and extreme weather
               events, it is crucial for banks and insurance companies to
               accurately assess credit risks, determine appropriate insurance
-              premiums, and to improve customer
+              premiums, and to improve customer dialogues.
             </span>
           </div>
         </div>

@@ -24,7 +24,7 @@ const MapBasedAnalyticsSection = () => {
                 styles["map-based-analytics-section-grid-details-heading-title"]
               }
             >
-              Actionable Risk Insights
+              Actionable risk insights
             </span>
             <div
               className={
@@ -40,7 +40,7 @@ const MapBasedAnalyticsSection = () => {
                   ]
                 }
               >
-                ”AgroRisk offers advanced analytics and data-driven insights to
+                AgroRisk offers advanced analytics and data-driven insights to
                 help financial institutions and farmers make informed decisions
                 and transition strategies.
               </span>
@@ -58,12 +58,12 @@ const MapBasedAnalyticsSection = () => {
                 providers to enhance their risk management strategies and tailor
                 their financial products to the unique needs of agricultural
                 businesses. AgroRisk plays a vital role in fostering
-                sustainability and resilience within the agricultural sector.”
+                sustainability and resilience within the agricultural sector.
               </span>
             </div>
           </div>
           <ButtonLink
-            to="#"
+            to="/talk-to-us"
             title="Book demonstration"
             className={
               styles[
