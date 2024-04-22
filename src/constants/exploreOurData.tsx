@@ -7,19 +7,19 @@ import chartThree from "@/assets/icons/chart-3.svg";
 export const EXPLORE_OUR_DATA_BUTTONS = [
   {
     id: uuidv4(),
-    title: "Field-level data",
+    title: "Field-Level Data",
     name: "field_level_data",
     icon: chartOne,
   },
   {
     id: uuidv4(),
-    title: "Company risk insights",
+    title: "Company Risk Insights",
     name: "company_risk_insights",
     icon: chartTwo,
   },
   {
     id: uuidv4(),
-    title: "Portfolio reporting",
+    title: "Portfolio Reporting",
     name: "portfolio_reporting",
     icon: chartThree,
   },
@@ -28,69 +28,68 @@ export const EXPLORE_OUR_DATA_BUTTONS = [
 export const EXPLORE_OUR_DATA_CONTENT = [
   {
     id: uuidv4(),
-    title: "Want to know more about Field-level data?",
+    title: "Risk is location-specific",
     name: "field_level_data",
     subtitle: [
       {
         id: uuidv4() + Date.now(),
         title: `
-          Field-level data is a leading software tool designed to specifically for
-          financial companies to evaluate and quantify climate-related
-          risks faced by agricultural farms.
+          Climate  risks  such  as flooding  are  extremely 
+          location-specific  with significant  differences  in 
+          risk-levels  across  even small  distances.
         `,
       },
       {
         id: uuidv4() + Date.now(),
         title: `
-          Field-level data offers advanced analytics and data-driven insights to
-          help financial institutions and farmers to make informed
-          decisions and transition strategies.
+          Therefore, our  solution  provide  the 
+          most granular data possible at  the  individual  field-level 
+          for each farmer.
         `,
       },
     ],
   },
   {
     id: uuidv4(),
-    title: "Want to know more about Company risk insights?",
+    title: "Farm-level insights",
     name: "company_risk_insights",
     subtitle: [
       {
         id: uuidv4() + Date.now(),
         title: `
-          Company risk insights is a leading software tool designed to specifically for
-          financial companies to evaluate and quantify climate-related
-          risks faced by agricultural farms.
+          Assessing  financial  risks  at the company level is key to 
+          determine  credit  risks, insurance  premiums,  and 
+          for  improving  customer dialogues.
         `,
       },
       {
         id: uuidv4() + Date.now(),
         title: `
-          Company risk insights offers advanced analytics and data-driven insights to
-          help financial institutions and farmers to make informed
-          decisions and transition strategies.
+          We  provide  aggregate  risk analytics, comparisons, and 
+          financial  insights  for  all farms. 
         `,
       },
     ],
   },
   {
     id: uuidv4(),
-    title: "Want to know more about Portfolio reporting?",
+    title: "Reporting and risk management made easy",
     name: "portfolio_reporting",
     subtitle: [
       {
         id: uuidv4() + Date.now(),
         title: `
-          Portfolio reporting is a leading software tool designed to specifically for
-          financial companies to evaluate and quantify climate-related
-          risks faced by agricultural farms.
+          We  ensure  ongoing  risk management  and  annual 
+          portfolio reporting becomes a smooth process.
         `,
       },
       {
         id: uuidv4() + Date.now(),
         title: `
-          Portfolio reporting offers advanced analytics and data-driven insights to
-          help financial institutions and farmers to make informed
-          decisions and transition strategies.
+          With  a  single  source  of truth  for  all  data  on  the 
+          platform, there are no black boxes  or  inconsistencies  in 
+          reporting  to  senior management  or  ensuring 
+          compliant ESG reporting. 
         `,
       },
     ],

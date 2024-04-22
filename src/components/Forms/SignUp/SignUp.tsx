@@ -90,8 +90,6 @@ const SignUpForm = () => {
               className={styles["sign-up-container-form-input"]}
             />
           </label>
-        </div>
-        <div className={styles["sign-up-container-form-required"]}>
           <label className={styles["sign-up-container-form-label"]}>
             Phone number *
             <BaseInput
@@ -171,14 +169,21 @@ const SignUpForm = () => {
             you can:
           </span>
           <ul className={styles["sign-up-container-form-description-list"]}>
-            <li className={styles["sign-up-container-form-description-list-item"]}>
-              Screen one or multiple portfolios to evaluate their
-              sustainability.
+            <li
+              className={styles["sign-up-container-form-description-list-item"]}
+            >
+              Gain detailed insights into financial climate risks.
             </li>
-            <li className={styles["sign-up-container-form-description-list-item"]}>Provide accurate sustainability metrics to your clients.</li>
-            <li className={styles["sign-up-container-form-description-list-item"]}>
-              Get access to insights from over 50 data sources, including NGOs,
-              academic institutions, governments and media.
+            <li
+              className={styles["sign-up-container-form-description-list-item"]}
+            >
+              Make informed credit decisions and improve customer dialogues.
+            </li>
+            <li
+              className={styles["sign-up-container-form-description-list-item"]}
+            >
+              Aggregate risk across your portfolio for risk management and
+              reporting.
             </li>
           </ul>
         </div>

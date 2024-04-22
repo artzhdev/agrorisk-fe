@@ -126,7 +126,7 @@
 .sign-up-container-form-description {
   position: absolute;
   left: 29.4375rem;
-  top: 8.375rem;
+  top: 6.375rem;
   background-color: var(--primary-turquoise-color);
   border-radius: 0 0.625rem 0.625rem 0;
   box-shadow: var(--secondary-shadow);
@@ -137,10 +137,11 @@
   justify-content: center;
   align-items: center;
   gap: 2.4375rem;
-  padding: 0 4.25rem;
 }
 
 .sign-up-container-form-description-title {
+  padding-left: 2.25rem;
+  align-self: start;
   font-weight: 400;
   font-size: 1.6875rem;
   color: var(--primary-white-color);
@@ -153,6 +154,7 @@
 }
 
 .sign-up-container-form-description-list {
+  padding-left: 3.75rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

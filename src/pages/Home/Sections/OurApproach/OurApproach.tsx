@@ -2,11 +2,10 @@ import styles from "./our-approach.module.css";
 
 import CicrleOne from "@/assets/imgs/decor/circle-1.svg";
 import CicrleTwo from "@/assets/imgs/decor/circle-2.svg";
-import ButtonLink from "@/components/Buttons/ButtonLink/ButtonLink";
 
 const OurApproachSection = () => {
   return (
-    <div className={styles["our-approach-section"]}>
+    <div className={styles["our-approach-section"]} id="aboutUs">
       <div className={styles["our-approach-section-content"]}>
         <img
           src={CicrleOne}
@@ -22,7 +21,7 @@ const OurApproachSection = () => {
           <span
             className={styles["our-approach-section-content-heading-preview"]}
           >
-            OUR APPROACH
+            About Us
           </span>
           <div
             className={styles["our-approach-section-content-heading-content"]}
@@ -32,8 +31,7 @@ const OurApproachSection = () => {
                 styles["our-approach-section-content-heading-content-title"]
               }
             >
-              Intuitive platform <br />
-              for sustainability.
+              Developed by sustainability professionals
             </span>
             <div
               className={
@@ -47,9 +45,8 @@ const OurApproachSection = () => {
                   ]
                 }
               >
-                Our Analytics Platform is an end-to-end solution to explore and
-                analyse the sustainability profile of individual issuers, funds
-                or entire portfolios.
+                AgroRisk is founded by Theodor Christensen, who has extensive
+                experience in sustainable finance and ESG risk management.
               </span>
               <span
                 className={
@@ -58,21 +55,16 @@ const OurApproachSection = () => {
                   ]
                 }
               >
-                From high-level portfolio analysis to granular insights on
-                single entities, we enable more efficient understanding of
-                investments and benchmarking, as well as powerful report
-                generation and data exports.
+                He was responsible for sustainability and climate at the Danish
+                Financial Supervisory Authority, where he oversaw both policy
+                development and enforcement of the key EU legislations in the
+                field. He has also been Head of Sustainability Compliance for
+                Danske Bank with responsibility to ensure bank-wide compliance
+                with sustainability-related legislation and commitments.
               </span>
             </div>
           </div>
         </div>
-        <ButtonLink
-          to="#"
-          title="Discover it now"
-          className={
-            styles["our-approach-section-content-discover-it-now-link"]
-          }
-        />
       </div>
     </div>
   );

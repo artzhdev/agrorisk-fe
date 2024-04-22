@@ -4,8 +4,18 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  gap: 4.5rem;
   padding-bottom: 4.5rem;
+}
+
+.up-to-date-section-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 4.5rem;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  background-color: rgba(204, 223, 231, 0.5);
 }
 
 .up-to-date-section-content {

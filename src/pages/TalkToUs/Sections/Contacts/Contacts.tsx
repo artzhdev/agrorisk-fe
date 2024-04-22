@@ -3,7 +3,7 @@ import styles from "./contacts.module.css";
 
 const ContactsSection = () => {
   return (
-    <div className={styles["contacts-section"]}>
+    <div className={styles["contacts-section"]} id="contacts">
       <div className={styles["contacts-section-item"]}>
         <span className={styles["contacts-section-item-title"]}>
           Get In Touch
@@ -14,7 +14,7 @@ const ContactsSection = () => {
             to="#"
             className={styles["contacts-section-item-subtitle-email-link"]}
           >
-            hello@agrorisk.com
+            hello@agrorisk.io
           </Link>
         </span>
       </div>
@@ -25,7 +25,8 @@ const ContactsSection = () => {
         <span className={styles["contacts-section-item-subtitle"]}>
           Do not hesitate to connect with us <br /> on our{" "}
           <Link
-            to="#"
+            to="https://www.linkedin.com/company/envira-aps"
+            target="_blank"
             className={styles["contacts-section-item-subtitle-linkedin-link"]}
           >
             LinkedIn page.

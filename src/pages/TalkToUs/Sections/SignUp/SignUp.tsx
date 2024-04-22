@@ -14,9 +14,8 @@ const SignUpSection = () => {
           </span>
         </div>
         <span className={styles["sign-up-section-heading-tip"]}>
-          Looking for a solution for measuring or reporting sustainability
-          impact? Book a call with us - tell us about your needs, and
-          requirements
+          Looking for a solution to measure and report climate risk in
+          agriculture? Book a call with us!
         </span>
       </div>
       <SignUpForm />

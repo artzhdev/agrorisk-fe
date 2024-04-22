@@ -4,22 +4,17 @@ export const NAVBAR_LINKS = [
   {
     id: uuidv4(),
     title: "Product",
-    to: "#",
-  },
-  {
-    id: uuidv4(),
-    title: "Solutions",
-    to: "#",
+    to: "/#mapBasedAnalytics",
   },
   {
     id: uuidv4(),
     title: "About Us",
-    to: "#",
+    to: "/#aboutUs",
   },
   {
     id: uuidv4(),
     title: "Insights",
-    to: "#",
+    to: "/#insights",
   },
 ];
 
@@ -31,22 +26,22 @@ export const FOOTER_LINKS = [
       {
         id: uuidv4(),
         title: "About Us",
-        to: "#",
+        to: "/#aboutUs",
       },
       {
         id: uuidv4(),
         title: "Insights",
-        to: "#",
+        to: "/#insights",
       },
       {
         id: uuidv4(),
         title: "Contact",
-        to: "#",
+        to: "/talk-to-us#contacts",
       },
       {
         id: uuidv4(),
         title: "LinkedIn",
-        to: "#",
+        to: "https://www.linkedin.com/company/envira-aps",
       },
     ],
   },
@@ -56,13 +51,13 @@ export const FOOTER_LINKS = [
     items: [
       {
         id: uuidv4(),
-        title: "Data",
-        to: "#",
+        title: "Solution",
+        to: "/#intuitiveSoftwareSolution",
       },
       {
         id: uuidv4(),
-        title: "Solutions",
-        to: "#",
+        title: "Data",
+        to: "/#exploreOurData",
       },
     ],
   },

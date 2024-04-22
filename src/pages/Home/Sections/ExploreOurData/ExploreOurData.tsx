@@ -7,6 +7,12 @@ import styles from "./explore-our-data.module.css";
 import cn from "classnames";
 import { useMemo, useState } from "react";
 
+const preview: { [key: string]: string } = {
+  field_level_data: "EXPLORE OUR DATA",
+  company_risk_insights: "ADVANCED ANALYTICS",
+  portfolio_reporting: "COMPLIANT REPORTING",
+};
+
 const ExploreOurDataSection = () => {
   const [dataName, setDataName] = useState("company_risk_insights");
 
@@ -15,13 +21,13 @@ const ExploreOurDataSection = () => {
   }, [dataName]);
 
   return (
-    <div className={styles["explore-our-data-section"]}>
+    <div className={styles["explore-our-data-section"]} id="exploreOurData">
       <div className={styles["explore-our-data-section-grid"]}>
         <div className={styles["explore-our-data-section-grid-details"]}>
           <span
             className={styles["explore-our-data-section-grid-details-title"]}
           >
-            EXPLORE OUR DATA
+            {preview[dataName]}
           </span>
           <div
             className={styles["explore-our-data-section-grid-details-heading"]}

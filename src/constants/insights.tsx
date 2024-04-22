@@ -7,23 +7,23 @@ import InsightImgThree from "@/assets/imgs/insights/insights-3.svg";
 export const INSIGHTS = [
   {
     id: uuidv4(),
-    title: "White paper",
+    title: "New Study",
     date: "April 12, 2024",
     img: InsightImgOne,
-    caption: "Sustainable News as a Market Signal",
+    caption: "Climate Change and Crop Yields",
   },
   {
     id: uuidv4(),
-    title: "White paper",
+    title: "Analysis",
     date: "April 12, 2024",
     img: InsightImgTwo,
-    caption: "Sustainable News as a Market Signal",
+    caption: "Using Scenario-analysis for Flood Risks",
   },
   {
     id: uuidv4(),
-    title: "White paper",
+    title: "EU Regulation",
     date: "April 12, 2024",
     img: InsightImgThree,
-    caption: "Sustainable News as a Market Signal",
+    caption: "Climate Reporting Requirements in CSRD",
   },
 ];

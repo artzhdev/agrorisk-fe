@@ -11,12 +11,12 @@ const IntroductionSection = () => {
           <span
             className={styles["introduction-section-content-heading-title"]}
           >
-            Financial climate risks for agricultural farms.
+            Financial Climate Risks for Agriculture
           </span>
           <span
             className={styles["introduction-section-content-heading-subtitle"]}
           >
-            Trusted and transparent insights across sustainability themes.
+            Actionable risk insights for financial companies
           </span>
         </div>
         <ButtonLink
