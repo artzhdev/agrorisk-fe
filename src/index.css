@@ -25,6 +25,10 @@ textarea {
   font-family: "Inter", Arial, Helvetica, sans-serif;
 }
 
+span {
+  text-align: left;
+}
+
 button {
   border: none;
   cursor: pointer;

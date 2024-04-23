@@ -22,7 +22,7 @@
 
 .introduction-section-content-heading {
   width: 100%;
-  max-width: 40.8125rem;
+  max-width: 42.8125rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -34,7 +34,6 @@
   font-weight: 700;
   font-size: 3.75rem;
   color: var(--primary-white-color);
-  line-height: 4.5056rem;
 }
 
 .introduction-section-content-heading-subtitle {

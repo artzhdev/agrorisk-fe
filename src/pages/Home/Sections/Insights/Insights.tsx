@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styles from "./insights.module.css";
 import { INSIGHTS } from "@/constants/insights";
 
@@ -45,17 +46,9 @@ const InsightsSection = () => {
                     >
                       {insight.title}
                     </span>
-                    <span
-                      className={
-                        styles[
-                          "insights-section-content-grid-item-content-heading-item"
-                        ]
-                      }
-                    >
-                      {insight.date}
-                    </span>
                   </div>
-                  <span
+                  <Link
+                    to={`/insights/${insight.order}`}
                     className={
                       styles[
                         "insights-section-content-grid-item-content-caption"
@@ -63,7 +56,7 @@ const InsightsSection = () => {
                     }
                   >
                     {insight.caption}
-                  </span>
+                  </Link>
                 </div>
               </div>
             );

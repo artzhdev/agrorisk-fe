@@ -8,22 +8,22 @@ export const INSIGHTS = [
   {
     id: uuidv4(),
     title: "New Study",
-    date: "April 12, 2024",
     img: InsightImgOne,
     caption: "Climate Change and Crop Yields",
+    order: 1,
   },
   {
     id: uuidv4(),
     title: "Analysis",
-    date: "April 12, 2024",
     img: InsightImgTwo,
-    caption: "Using Scenario-analysis for Flood Risks",
+    caption: "Using Scenario-Analysis and Climate Risk Assessments",
+    order: 2,
   },
   {
     id: uuidv4(),
     title: "EU Regulation",
-    date: "April 12, 2024",
     img: InsightImgThree,
     caption: "Climate Reporting Requirements in CSRD",
+    order: 3,
   },
 ];
