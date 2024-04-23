@@ -28,7 +28,6 @@
 
 .philosophy-section-grid-details-content {
   width: 100%;
-  max-width: 25.875rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -43,9 +42,18 @@
   text-align: left;
 }
 
+.philosophy-section-grid-details-content-item-one {
+  max-width: 23.375rem;
+}
+
+.philosophy-section-grid-details-content-item-two {
+  max-width: 25.3125rem;
+}
+
 .philosophy-section-grid-img {
   background-color: var(--secondary-turquoise-color);
   border-radius: 0 0.625rem 0.625rem 0;
   height: 100%;
   width: 100%;
+  object-fit: cover;
 }

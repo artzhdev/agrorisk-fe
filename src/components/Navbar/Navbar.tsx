@@ -10,18 +10,22 @@ import cn from "classnames";
 
 const Navbar = () => {
   const [isTalkToUsPage, setIsTalkToUsPage] = useState(false);
+  const [isInsightPage, setIsInsightPage] = useState(false);
 
   const { pathname } = useLocation();
 
   useEffect(() => {
     setIsTalkToUsPage(["/talk-to-us"].includes(pathname));
+    setIsInsightPage(pathname.startsWith("/insights"));
   }, [pathname]);
 
   return (
     <div className={styles["navbar"]}>
       <Link to="/">
         <img
-          src={isTalkToUsPage ? AgroRiskLogoTwo : AgroRiskLogoOne}
+          src={
+            isTalkToUsPage || isInsightPage ? AgroRiskLogoTwo : AgroRiskLogoOne
+          }
           alt="logo"
         />
       </Link>

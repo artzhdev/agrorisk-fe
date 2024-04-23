@@ -43,6 +43,8 @@
 }
 
 .explore-our-data-section-grid-details-heading-subtitle {
+  width: 100%;
+  max-width: 22.9375rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

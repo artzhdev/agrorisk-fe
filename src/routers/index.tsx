@@ -1,5 +1,6 @@
 import App from "@/App";
 import HomePage from "@/pages/Home/Home";
+import InsightPage from "@/pages/Insignt/Insight";
 import TalkToUsPage from "@/pages/TalkToUs/TalkToUs";
 import { createHashRouter } from "react-router-dom";
 
@@ -15,6 +16,10 @@ export const router = createHashRouter([
       {
         path: "/talk-to-us",
         element: <TalkToUsPage />,
+      },
+      {
+        path: "/insights/:insightId",
+        element: <InsightPage />,
       },
     ],
   },
