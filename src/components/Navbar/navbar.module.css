@@ -34,3 +34,11 @@
   background-color: var(--secondary-turquoise-color) !important;
   color: var(--primary-turquoise-color) !important;
 }
+
+.navbar-insight {
+  background-color: var(--primary-blue-color);
+  padding: 1.5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}

@@ -13,7 +13,7 @@ const PhilosophySection = () => {
       <div className={styles["philosophy-section-grid"]}>
         <div className={styles["philosophy-section-grid-details"]}>
           <span className={styles["philosophy-section-grid-details-title"]}>
-            Intuitive Software <br /> Solution
+            Intuitive Software Solution
           </span>
           <div className={styles["philosophy-section-grid-details-content"]}>
             <span

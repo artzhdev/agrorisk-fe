@@ -16,7 +16,7 @@
   align-items: flex-start;
   gap: 2.125rem;
   background-color: var(--secondary-turquoise-color);
-  padding: 3.0625rem 8.625rem 3rem 5.0625rem;
+  padding: 3.0625rem 0 3rem 5.0625rem;
   border-radius: 0.625rem 0 0 0.625rem;
 }
 
@@ -43,11 +43,11 @@
 }
 
 .philosophy-section-grid-details-content-item-one {
-  max-width: 23.375rem;
+  max-width: 20.725rem;
 }
 
 .philosophy-section-grid-details-content-item-two {
-  max-width: 25.3125rem;
+  max-width: 20.725rem;
 }
 
 .philosophy-section-grid-img {
