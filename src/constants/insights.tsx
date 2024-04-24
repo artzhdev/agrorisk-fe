@@ -16,7 +16,7 @@ export const INSIGHTS = [
     id: uuidv4(),
     title: "Analysis",
     img: InsightImgTwo,
-    caption: "Using Scenario-Analysis and Climate Risk Assessments",
+    caption: "Scenario-Analysis and Climate Risk Assessments",
     order: 2,
   },
   {

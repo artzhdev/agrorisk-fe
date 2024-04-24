@@ -37,7 +37,7 @@ const SignUpForm = () => {
           });
           setSubcribe("subscribe");
         }
-      }
+      },
     );
   };
 
@@ -172,7 +172,7 @@ const SignUpForm = () => {
             <li
               className={styles["sign-up-container-form-description-list-item"]}
             >
-              Gain detailed insights into financial climate risks.
+              Gain detailed insights into financial climate risk.
             </li>
             <li
               className={styles["sign-up-container-form-description-list-item"]}

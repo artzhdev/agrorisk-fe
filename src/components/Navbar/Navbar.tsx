@@ -20,11 +20,16 @@ const Navbar = () => {
   }, [pathname]);
 
   return (
-    <div className={styles["navbar"]}>
+    <div
+      className={cn({
+        [styles["navbar"]]: true,
+        [styles["navbar-insight"]]: isInsightPage,
+      })}
+    >
       <Link to="/">
         <img
           src={
-            isTalkToUsPage || isInsightPage ? AgroRiskLogoTwo : AgroRiskLogoOne
+            isTalkToUsPage || !isInsightPage ? AgroRiskLogoTwo : AgroRiskLogoOne
           }
           alt="logo"
         />
