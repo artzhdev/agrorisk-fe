@@ -1,8 +1,15 @@
 .insight-layout {
   width: 100%;
+  max-width: 90rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  padding: 8.25rem 6.5rem 2rem;
+  padding: 0 0 2rem;
+  margin: 0 auto;
+}
+
+.insight-layout-content {
+  max-width: 56.25rem;
+  margin: 0 auto;
 }

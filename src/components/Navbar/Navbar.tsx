@@ -5,10 +5,14 @@ import AgroRiskLogoOne from "@/assets/imgs/logos/agrorisk-logo-1.svg";
 import AgroRiskLogoTwo from "@/assets/imgs/logos/agrorisk-logo-2.svg";
 import { Link, useLocation } from "react-router-dom";
 import ButtonLink from "../Buttons/ButtonLink/ButtonLink";
-import { useEffect, useState } from "react";
+import { FC, useEffect, useState } from "react";
 import cn from "classnames";
 
-const Navbar = () => {
+type NavbarProps = {
+  whiteLogo?: boolean;
+};
+
+const Navbar: FC<NavbarProps> = ({ whiteLogo }) => {
   const [isTalkToUsPage, setIsTalkToUsPage] = useState(false);
   const [isInsightPage, setIsInsightPage] = useState(false);
 
@@ -27,12 +31,7 @@ const Navbar = () => {
       })}
     >
       <Link to="/">
-        <img
-          src={
-            isTalkToUsPage || !isInsightPage ? AgroRiskLogoTwo : AgroRiskLogoOne
-          }
-          alt="logo"
-        />
+        <img src={!whiteLogo ? AgroRiskLogoTwo : AgroRiskLogoOne} alt="logo" />
       </Link>
       <div className={styles["navbar-links"]}>
         {NAVBAR_LINKS.map((link) => {

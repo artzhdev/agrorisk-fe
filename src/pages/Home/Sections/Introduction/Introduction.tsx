@@ -5,7 +5,7 @@ import ButtonLink from "@/components/Buttons/ButtonLink/ButtonLink";
 const IntroductionSection = () => {
   return (
     <div className={styles["introduction-section"]}>
-      <Navbar />
+      <Navbar whiteLogo />
       <div className={styles["introduction-section-content"]}>
         <div className={styles["introduction-section-content-heading"]}>
           <span

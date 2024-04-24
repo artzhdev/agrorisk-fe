@@ -5,13 +5,12 @@
   justify-content: flex-start;
   align-items: flex-start;
   gap: 2rem;
-  padding-top: 2rem;
 }
 
 .insight-page img {
   margin: 0 auto;
-  width: 75%;
-  height: 33rem;
+  width: 100%;
+  height: 21rem;
   object-fit: cover;
   margin-bottom: 3rem;
 }
@@ -19,25 +18,24 @@
 .insight-page h3 {
   font-weight: 400;
   font-size: 1.0625rem;
-  color: var(--primary-turquoise-color);
-  margin: 3.75rem auto 2.5rem;
+  color: var(--primary-black-color);
+  margin: 2.875rem auto 0;
 }
 
 .insight-page h2 {
-  font-weight: 700;
-  font-size: 2.5rem;
+  font-weight: 600;
+  font-size: 1rem;
   color: var(--primary-black-color);
-  margin: 0;
-  margin-top: 2rem;
 }
 
 .insight-page h1 {
   font-weight: 700;
-  max-width: 50%;
   text-align: center;
   font-size: 2.5rem;
   color: var(--primary-black-color);
   margin: 0 auto 5rem;
+  max-width: 40rem;
+  margin: 0 auto 3.625rem;
 }
 
 .insight-page p,

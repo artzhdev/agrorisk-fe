@@ -1,5 +1,7 @@
 .navbar {
   width: 100%;
+  max-width: 90rem;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -38,7 +40,4 @@
 .navbar-insight {
   background-color: var(--primary-blue-color);
   padding: 1.5rem;
-  position: absolute;
-  top: 0;
-  left: 0;
 }

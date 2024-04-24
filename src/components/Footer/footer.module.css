@@ -1,5 +1,7 @@
 .footer {
   width: 100%;
+  max-width: 90rem;
+  margin: 0 auto;
   padding: 6.6875rem 6.5rem 6.6875rem 5.875rem;
   background-color: var(--secondary-turquoise-color);
   display: flex;
