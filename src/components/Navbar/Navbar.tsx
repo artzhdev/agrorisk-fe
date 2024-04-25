@@ -14,20 +14,20 @@ type NavbarProps = {
 
 const Navbar: FC<NavbarProps> = ({ whiteLogo }) => {
   const [isTalkToUsPage, setIsTalkToUsPage] = useState(false);
-  const [isInsightPage, setIsInsightPage] = useState(false);
+  // const [isInsightPage, setIsInsightPage] = useState(false);
 
   const { pathname } = useLocation();
 
   useEffect(() => {
     setIsTalkToUsPage(["/talk-to-us"].includes(pathname));
-    setIsInsightPage(pathname.startsWith("/insights"));
+    // setIsInsightPage(pathname.startsWith("/insights"));
   }, [pathname]);
 
   return (
     <div
       className={cn({
         [styles["navbar"]]: true,
-        [styles["navbar-insight"]]: isInsightPage,
+        // [styles["navbar-insight"]]: isInsightPage,
       })}
     >
       <Link to="/">
@@ -39,7 +39,8 @@ const Navbar: FC<NavbarProps> = ({ whiteLogo }) => {
             <Link
               className={cn({
                 [styles["navbar-links-item"]]: true,
-                [styles["navbar-links-item-contrast"]]: isTalkToUsPage,
+                [styles["navbar-links-item-contrast"]]:
+                  isTalkToUsPage || !whiteLogo,
               })}
               key={link.id}
               to={link.to}

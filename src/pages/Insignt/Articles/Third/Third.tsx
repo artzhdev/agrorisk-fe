@@ -3,8 +3,10 @@ import InsughtImageThird from "@/assets/imgs/insights/insights-3.svg";
 const ThirdArticle = () => {
   return (
     <>
-      <h3>NEW STUDY APRIL 2024</h3>
-      <h1>Climate Reporting Requirements in CSRD</h1>
+      <div>
+        <h3>NEW STUDY APRIL 2024</h3>
+        <h1>Climate Reporting Requirements in CSRD</h1>
+      </div>
       <img src={InsughtImageThird} />
       <p>
         The Corporate Sustainability Reporting Directive (CSRD) and the European

@@ -3,8 +3,12 @@ import InsughtImageTwo from "@/assets/imgs/insights/insights-2.svg";
 const SecondArticle = () => {
   return (
     <>
-      <h3>NEW STUDY APRIL 2024</h3>
-      <h1>Scenario-Analysis to Assess Climate Risks in Loans and Mortgages</h1>
+      <div>
+        <h3>NEW STUDY APRIL 2024</h3>
+        <h1>
+          Scenario-Analysis to Assess Climate Risks in Loans and Mortgages
+        </h1>
+      </div>
       <img src={InsughtImageTwo} />
       <p>
         Climate change poses undeniable financial risks that affect the global
