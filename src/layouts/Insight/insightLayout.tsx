@@ -8,7 +8,7 @@ const InsightLayout = ({ children }: { children: ReactNode }) => {
   return (
     <>
       <div className={styles["insight-layout"]}>
-        <Navbar whiteLogo />
+        <Navbar />
         <div className={styles["insight-layout-content"]}>{children}</div>
       </div>
       <Footer />

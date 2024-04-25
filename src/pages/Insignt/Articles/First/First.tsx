@@ -3,8 +3,10 @@ import InsughtImageOne from "@/assets/imgs/insights/insights-1.svg";
 const FirstArticle = () => {
   return (
     <>
-      <h3>NEW STUDY APRIL 2024</h3>
-      <h1>Impact of Climate Change and Extreme Weather on Crop Yield</h1>
+      <div>
+        <h3>NEW STUDY APRIL 2024</h3>
+        <h1>Impact of Climate Change and Extreme Weather on Crop Yield</h1>
+      </div>
       <img src={InsughtImageOne} />
       <p>
         A new study by Danish researchers delves into the impact of climate
