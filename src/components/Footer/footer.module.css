@@ -36,3 +36,9 @@
   font-size: 0.875rem;
   color: var(--black-opacity-50-color);
 }
+
+@media screen and (min-width: 120rem) {
+  .footer {
+    max-width: 100%;
+  }
+}

@@ -38,6 +38,15 @@
   color: var(--primary-black-color);
 }
 
-.up-to-date-section-subscribe-link {
+.up-to-date-section-subscribe-btn {
   width: 13.0625rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.875rem;
+  border-radius: 1.4375rem;
+  color: var(--primary-white-color);
+  font-size: 1.0625rem;
+  font-weight: 400;
+  background-color: var(--primary-turquoise-color);
 }

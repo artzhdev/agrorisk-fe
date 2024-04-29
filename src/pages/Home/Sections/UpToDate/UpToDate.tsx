@@ -1,10 +1,25 @@
-import ButtonLink from "@/components/Buttons/ButtonLink/ButtonLink";
 import styles from "./up-to-date.module.css";
 import BaseInput from "@/components/Inputs/BaseInput/BaseInput";
 import { useState } from "react";
+import jsonp from "jsonp";
 
 const UpToDateSection = () => {
   const [email, setEmail] = useState("");
+
+  const handleSubscribe = () => {
+    const mailchimpBaseUrl = import.meta.env.VITE_MAILCHIMP_BASE_URL;
+    const mailchimpApiKey = import.meta.env.VITE_MAILCHIMP_API_KEY;
+    const mailchimpFormId = import.meta.env.VITE_MAILCHIMP_FORM_ID;
+    const mailchimpId = import.meta.env.VITE_MAILCHIMP_ID;
+
+    const url = `${mailchimpBaseUrl}?u=${mailchimpApiKey}&amp;id=${mailchimpId}&amp;f_id=${mailchimpFormId}`;
+
+    jsonp(`${url}&EMAIL=${email}`, { param: "c" }, (_, data) => {
+      if (data && Object.keys(data).length) {
+        setEmail("");
+      }
+    });
+  };
 
   return (
     <div className={styles["up-to-date-section"]}>
@@ -24,11 +39,12 @@ const UpToDateSection = () => {
             name="email"
           />
         </div>
-        <ButtonLink
-          to="#"
-          title="Subscribe"
-          className={styles["up-to-date-section-subscribe-link"]}
-        />
+        <button
+          className={styles["up-to-date-section-subscribe-btn"]}
+          onClick={handleSubscribe}
+        >
+          Subscribe
+        </button>
       </div>
     </div>
   );
