@@ -1,10 +1,14 @@
 import { useLocation } from "react-router-dom";
 import ContactsSection from "./Sections/Contacts/Contacts";
 import SignUpSection from "./Sections/SignUp/SignUp";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const TalkToUsPage = () => {
   const { hash } = useLocation();
+
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const handleSubmit = () => setIsSubmitted(true);
 
   useEffect(() => {
     if (!hash) {
@@ -14,8 +18,8 @@ const TalkToUsPage = () => {
 
   return (
     <>
-      <SignUpSection />
-      <ContactsSection />
+      <SignUpSection onClick={handleSubmit} isSubmitted={isSubmitted} />
+      {!isSubmitted && <ContactsSection />}
     </>
   );
 };

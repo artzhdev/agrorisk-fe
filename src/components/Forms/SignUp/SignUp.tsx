@@ -1,9 +1,13 @@
-import { ChangeEvent, FormEvent, useState } from "react";
+import { ChangeEvent, FC, FormEvent, useState } from "react";
 import styles from "./sign-up.module.css";
 import BaseInput from "@/components/Inputs/BaseInput/BaseInput";
 import jsonp from "jsonp";
 
-const SignUpForm = () => {
+type SignUpFormProps = {
+  onClick: () => void;
+};
+
+const SignUpForm: FC<SignUpFormProps> = ({ onClick }) => {
   const [values, setValues] = useState({
     FNAME: "",
     LNAME: "",
@@ -36,8 +40,9 @@ const SignUpForm = () => {
             message: "",
           });
           setSubcribe("subscribe");
+          onClick();
         }
-      },
+      }
     );
   };
 

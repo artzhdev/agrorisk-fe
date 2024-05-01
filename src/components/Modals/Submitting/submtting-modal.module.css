@@ -1,0 +1,44 @@
+.submitting-modal-body {
+  width: 100%;
+  max-width: 55.375rem;
+  height: 48rem;
+  background-color: var(--primary-white-color);
+  border-radius: 2.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.submitting-modal-body-img {
+  border-radius: 0 2.25rem 2.25rem 0;
+}
+
+.submitting-modal-body-content {
+  padding: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 100%;
+  gap: 7.25rem;
+}
+
+.submitting-modal-body-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 3.375rem;
+}
+
+.submitting-modal-body-content-title {
+  font-weight: 700;
+  font-size: 3.125rem;
+  color: var(--primary-blue-color);
+}
+
+.submitting-modal-body-content-subtitle {
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: var(--primary-blue-color);
+}

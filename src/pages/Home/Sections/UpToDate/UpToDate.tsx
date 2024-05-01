@@ -2,9 +2,11 @@ import styles from "./up-to-date.module.css";
 import BaseInput from "@/components/Inputs/BaseInput/BaseInput";
 import { useState } from "react";
 import jsonp from "jsonp";
+import SubmittingModal from "@/components/Modals/Submitting/SubmittingModal";
 
 const UpToDateSection = () => {
   const [email, setEmail] = useState("");
+  const [isOpen, setIsOpen] = useState(false);
 
   const handleSubscribe = () => {
     const mailchimpBaseUrl = import.meta.env.VITE_MAILCHIMP_BASE_URL;
@@ -17,6 +19,7 @@ const UpToDateSection = () => {
     jsonp(`${url}&EMAIL=${email}`, { param: "c" }, (_, data) => {
       if (data && Object.keys(data).length) {
         setEmail("");
+        setIsOpen(true);
       }
     });
   };
@@ -46,6 +49,7 @@ const UpToDateSection = () => {
           Subscribe
         </button>
       </div>
+      <SubmittingModal open={isOpen} onClick={() => setIsOpen(false)} />
     </div>
   );
 };
