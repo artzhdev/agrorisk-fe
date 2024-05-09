@@ -85,3 +85,9 @@
   width: 13.0625rem;
   margin-right: 13.1875rem;
 }
+
+@media screen and (min-width: 120rem) {
+  .our-approach-section-content {
+    max-width: 77rem;
+  }
+}

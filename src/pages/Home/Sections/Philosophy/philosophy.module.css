@@ -57,3 +57,14 @@
   width: 100%;
   object-fit: cover;
 }
+
+@media screen and (min-width: 120rem) {
+  .philosophy-section {
+    display: flex;
+    justify-content: center;
+  }
+
+  .philosophy-section-grid {
+    max-width: 63.875rem;
+  }
+}

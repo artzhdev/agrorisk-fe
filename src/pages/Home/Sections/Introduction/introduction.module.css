@@ -45,3 +45,9 @@
 .introduction-section-demonstration-link {
   width: 15.6875rem;
 }
+
+@media screen and (min-width: 120rem) {
+  .introduction-section {
+    background-position: center center;
+  }
+}
