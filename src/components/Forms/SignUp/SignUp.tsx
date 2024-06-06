@@ -23,9 +23,8 @@ const SignUpForm: FC<SignUpFormProps> = ({ onClick }) => {
     const mailchimpBaseUrl = import.meta.env.VITE_MAILCHIMP_BASE_URL;
     const mailchimpApiKey = import.meta.env.VITE_MAILCHIMP_API_KEY;
     const mailchimpFormId = import.meta.env.VITE_MAILCHIMP_FORM_ID;
-    const mailchimpId = import.meta.env.VITE_MAILCHIMP_ID;
 
-    const url = `${mailchimpBaseUrl}?u=${mailchimpApiKey}&amp;id=${mailchimpId}&amp;f_id=${mailchimpFormId}`;
+    const url = `${mailchimpBaseUrl}?u=${mailchimpApiKey}&form_id=${mailchimpFormId}`;
 
     jsonp(
       `${url}&EMAIL=${values.EMAIL}&FNAME=${values.FNAME}&LNAME=${values.LNAME}`,
