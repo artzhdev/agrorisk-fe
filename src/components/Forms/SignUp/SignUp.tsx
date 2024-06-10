@@ -1,7 +1,7 @@
 import { ChangeEvent, FC, FormEvent, useState } from "react";
 import styles from "./sign-up.module.css";
 import BaseInput from "@/components/Inputs/BaseInput/BaseInput";
-import jsonp from "jsonp";
+// import jsonp from "jsonp";
 
 type SignUpFormProps = {
   onClick: () => void;
@@ -22,14 +22,27 @@ const SignUpForm: FC<SignUpFormProps> = ({ onClick }) => {
 
     const mailchimpBaseUrl = import.meta.env.VITE_MAILCHIMP_BASE_URL;
     const mailchimpApiKey = import.meta.env.VITE_MAILCHIMP_API_KEY;
-    const mailchimpFormId = import.meta.env.VITE_MAILCHIMP_FORM_ID;
+    const mailchimpContactFormId = import.meta.env
+      .VITE_MAILCHIMP_CONTACT_FORM_ID;
 
-    const url = `${mailchimpBaseUrl}?u=${mailchimpApiKey}&form_id=${mailchimpFormId}`;
-
-    jsonp(
-      `${url}&EMAIL=${values.EMAIL}&FNAME=${values.FNAME}&LNAME=${values.LNAME}`,
-      { param: "c" },
-      (_, data) => {
+    const url = `${mailchimpBaseUrl}/contact-form/post?u=${mailchimpApiKey}&form_id=${mailchimpContactFormId}`;
+    fetch(url, {
+      method: "POST",
+      mode: "no-cors",
+      body: JSON.stringify({
+        fields: {
+          4: values.EMAIL,
+          6: values.FNAME,
+          7: values.LNAME,
+          8: values.message,
+          9: values.phone,
+        },
+        "mc-SMSPHONE-ack": false,
+        subscribe: true,
+      }),
+    })
+      .then((data) => data.json())
+      .then((data) => {
         if (data && Object.keys(data).length) {
           setValues({
             FNAME: "",
@@ -41,8 +54,25 @@ const SignUpForm: FC<SignUpFormProps> = ({ onClick }) => {
           setSubcribe("subscribe");
           onClick();
         }
-      }
-    );
+      });
+
+    // jsonp(
+    //   `${url}&EMAIL=${values.EMAIL}&FNAME=${values.FNAME}&LNAME=${values.LNAME}`,
+    //   { param: "c" },
+    //   (_, data) => {
+    //     if (data && Object.keys(data).length) {
+    //       setValues({
+    //         FNAME: "",
+    //         LNAME: "",
+    //         EMAIL: "",
+    //         phone: "",
+    //         message: "",
+    //       });
+    //       setSubcribe("subscribe");
+    //       onClick();
+    //     }
+    //   }
+    // );
   };
 
   const handleChange = ({

@@ -11,9 +11,11 @@ const UpToDateSection = () => {
   const handleSubscribe = () => {
     const mailchimpBaseUrl = import.meta.env.VITE_MAILCHIMP_BASE_URL;
     const mailchimpApiKey = import.meta.env.VITE_MAILCHIMP_API_KEY;
-    const mailchimpFormId = import.meta.env.VITE_MAILCHIMP_FORM_ID;
+    const mailchimpId = import.meta.env.VITE_MAILCHIMP_ID;
+    const mailchimpSubscribeFormId = import.meta.env
+      .VITE_MAILCHIMP_SUBSCRIBE_FORM_ID;
 
-    const url = `${mailchimpBaseUrl}?u=${mailchimpApiKey}&form_id=${mailchimpFormId}`;
+    const url = `${mailchimpBaseUrl}/subscribe/post?u=${mailchimpApiKey}&amp;id=${mailchimpId}&amp;f_id=${mailchimpSubscribeFormId}`;
 
     jsonp(`${url}&EMAIL=${email}`, { param: "c" }, (_, data) => {
       if (data && Object.keys(data).length) {
